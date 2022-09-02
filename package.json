@@ -1,8 +1,10 @@
 {
 	"name": "create-vite-tailwind",
 	"description": "A minimal boilerplate project for using TailwindCSS with Vite",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"author": "Christian Legge <christian@christianlegge.dev>",
+	"repository": "https://github.com/scatter-dev/create-vite-tailwind",
+	"homepage": "https://github.com/scatter-dev/create-vite-tailwind",
 	"scripts": {
 		"build": "tsup src/cli.ts --minify",
 		"clean": "shx rm -rf lib",
