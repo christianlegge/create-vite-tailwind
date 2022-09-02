@@ -1,0 +1,16 @@
+{
+	"name": "{{name}}",
+	"description": "{{description}}",
+	"author": "{{contact}}",
+	"version": "0.1.0",
+	"license": "{{license}}",
+	"scripts": {
+		"dev": "vite",
+		{{#if typescript}}
+		"build": "tsc && vite build",
+		{{else}}
+		"build": "vite build",
+		{{/if}}
+		"preview": "vite preview"
+	}
+}

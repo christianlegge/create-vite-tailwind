@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style.css" />
+		<title>Vite + Tailwind</title>
+	</head>
+	<body>
+		<style>
+			/* Writing Tailwind classes like this is bad practice!
+			It's written here to avoid cluttering style.css
+			since users will not want this class in their boilerplate.
+			To achieve this in a real project, put it in style.css and
+			wrap it in @layer components {}. */
+			.inline-code {
+				@apply inline-block font-mono bg-slate-300 text-slate-900 p-2 rounded-md select-all;
+			}
+			a {
+				@apply underline font-semibold hover:text-slate-500;
+			}
+		</style>
+		<div
+			class="grid place-items-center h-screen bg-gradient-to-b from-slate-100 to-slate-300"
+		>
+			<div class="text-justify space-y-8 px-8 max-w-xl">
+				<h1
+					class="text-center text-4xl sm:text-6xl text-slate-700 font-bold"
+				>
+					Vite + Tailwind
+				</h1>
+				<p>
+					A minimal boilerplate project for using TailwindCSS with Vite.
+				</p>
+				<p>
+					Use your favorite package manager to run the 
+					<span class="inline-code">dev</span> script to run the server
+					(e.g., <span class="inline-code">yarn dev</span>).
+				</p>
+				<p>
+					To build a static site for production, run the <span class="inline-code">build</span>
+					script. You can then run the <span class="inline-code">preview</span> script
+					to run the production build locally, though this is not recommended for deployment.
+					See the <a href="https://vitejs.dev/guide/static-deploy.html">Vite docs</a> for details.
+				</p>
+				<p>
+					Tailwind purges all unused CSS classes by default. This project only scans HTML and 
+					{{#if typescript}}
+					TypeScript
+					{{else}}
+					JavaScript
+					{{/if}}
+					files in the root directory. You can edit
+					<span class="inline-code">tailwind.config.cjs</span> to
+					change this behavior. See the
+					<a
+						href="https://tailwindcss.com/docs/configuration"
+						>Tailwind configuration docs</a
+					>
+					for more info.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
